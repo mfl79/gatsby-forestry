@@ -1,31 +1,28 @@
 ---
 label: Page
+hide_body: false
 is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page
-    config:
-      required: true
-  - type: text
-    name: subtitle
-    label: Subtitle
-    description: Text that is shown just above the title
-  - type: text
-    name: template
-    label: Template
-    hidden: true
-    default: page
-    config:
-      required: true
-  - type: text
-    name: type
-    label: Reference Type Name
-    description: Name of the object model if it was referenced
-    hidden: true
-    default: page
-pages:
-  - elements.md
-  - generic.md
-  - ipsum.md
+- type: text
+  name: title
+  label: Title
+  description: The title of the page
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: Text that is shown just above the title
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: page
+  config:
+    required: true
+- type: text
+  name: type
+  label: Reference Type Name
+  description: Name of the object model if it was referenced
+  hidden: true
+  default: page
