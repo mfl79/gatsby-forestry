@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
+
+html,
+body,
+section {
+    font-size: $tiny;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: $light;
+}
+
+h1 {
+    font-size: $small;
+    line-height: ($small + $micro);
+    margin-bottom: $tiny;
+
+    @media screen and (min-width: $tablet) {
+        font-size: $medium;
+        line-height: ($medium + $micro);
+    }
+}
+
+h2 {
+    font-size: 18px;
+    line-height: (18px + $micro);
+    margin-bottom: $micro;
+
+
+    @media screen and (min-width: $tablet) {
+        font-size: $small;
+        line-height: ($small + $micro);
+    }
+}
+
+h3 {
+    margin-bottom: $micro;
+    font-size: $tiny;
+    line-height: ($tiny + $micro);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+        line-height: (18px + $micro);
+    }
+}
+
+h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: $micro;
+    letter-spacing: 0.02em;
+}
+
+p {
+    font-size: $tiny;
+    line-height: $small;
+    margin: 0 0 $micro 0;
+    font-weight: $light;
+
+    @media screen and (min-width: $tablet) {
+        margin: 0 0 $tiny 0;
+    }
+
+    + h3 {
+        margin-top: $tiny;
+        @media screen and (min-width: $tablet) {
+            margin-top: $micro;
+        }
+    }
+}
+
+ul {
+    list-style-type: square;
+    margin: $tiny 0;
+    padding: 0 0 0 18px;
+    font-weight: $light;
+
+    @media screen and (min-width: $tablet) {
+        padding: 0 $medium 0 42px;
+    }
+
+    li {
+        line-height: $small;
+
+        &:not(:last-child) {
+            margin-bottom: $micro;
+        }
+    }
+}

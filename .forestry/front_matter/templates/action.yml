@@ -1,0 +1,17 @@
+---
+label: Action
+is_partial: true
+display_field: label
+fields:
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: url
+    label: URL
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: action

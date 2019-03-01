@@ -1,0 +1,13 @@
+.breadcrumbs {
+  background: rgba(0,0,0,.05);
+  padding: $small;
+  margin-top: -2px;
+
+  .text-link {
+    font-weight: $bold;
+  }
+
+  span {
+    margin: 0 $micro;
+  }
+}

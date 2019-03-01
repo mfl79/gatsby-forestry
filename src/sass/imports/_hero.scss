@@ -1,0 +1,65 @@
+.blog .hero {
+  @media screen and (min-width: $tablet) {
+    margin: $large 0;
+  }
+}
+
+.post .hero {
+  margin-bottom: 0;
+
+  img {
+    border-radius: 0;
+  }
+}
+
+.hero {
+  width: 100%;
+  margin: $medium 0 $small;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 50%;
+    border-radius: 100%;
+    margin: 0 auto ($medium - 12px) 0;
+
+    @media screen and (min-width: $tablet) {
+      width: auto;
+      height: (($medium * 2) + $micro);
+      min-height: 100%;
+      margin: 0 $small 0 0;
+    }
+  }
+
+  .copy {
+    text-align: left;
+    margin: 0;
+  }
+
+  h2 {
+    @media screen and (min-width: $tablet) {
+      .text-link {
+        &:after {
+          bottom: 2px;
+        }
+
+        &:hover {
+          &:after {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .publish-date {
+    color: rgba(0, 0, 0, .5);
+    font-weight: $regular;
+    font-style: italic;
+  }
+}

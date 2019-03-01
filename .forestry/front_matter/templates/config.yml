@@ -1,0 +1,61 @@
+---
+label: Global Site Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: Site title
+    config:
+      required: true
+  - type: field_group
+    name: header
+    label: Header Configuration
+    fields:
+      - type: textarea
+        name: content
+        label: Header Content
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: boolean
+        name: has_nav
+        label: Navigation Menu
+        description: Display the navigation bar in the header
+        default: true
+  - type: field_group
+    name: footer
+    label: Footer Configuration
+    fields:
+      - type: textarea
+        name: content
+        label: Footer Content
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: field_group_list
+        name: links
+        label: Links
+        description: A list of links to display in the footer of the site
+        config:
+          labelField: text
+        fields:
+          - type: text
+            name: text
+            label: Link text
+          - type: text
+            name: url
+            label: URL
+          - type: boolean
+            name: new_window
+            label: Open in new window
+            default: true
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: config

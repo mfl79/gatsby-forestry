@@ -1,0 +1,40 @@
+---
+label: Post List
+is_partial: true
+display_field: title
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: posts
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Section Title
+    description: >-
+      The section title (Used by the CMS, even if it is not displayed in the
+      section)
+  - type: text
+    name: section_id
+    label: Element ID
+  - type: number
+    name: num_posts_displayed
+    label: Number of displayed posts
+    config:
+      required: true
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    default: Posts
+    config:
+      required: true
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: posts
