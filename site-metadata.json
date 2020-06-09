@@ -4,11 +4,11 @@
     "has_nav": true
   },
   "footer": {
-    "content": "&copy; Stackbit-Vanilla. All rights reserved.",
+    "content": "© Rugbowisko. All rights reserved.",
     "links": [
       {
-        "text": "Made with Stackbit",
-        "url": "https://www.stackbit.com",
+        "text": "W szponach rugby",
+        "url": "http://www.wszponachrugby.pl/",
         "new_window": true
       }
     ]
